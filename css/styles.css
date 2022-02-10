@@ -1,0 +1,104 @@
+/*background: #E5E5E5*/
+/*
+Roboto
+400
+500
+700
+900
+Raleway 700
+*/
+
+/* #FFFFFF
+#212121
+#FFFFFF
+#757575
+#2196F3
+#EEEEEE
+
+#000000
+#F5F4FA
+#2F303A
+#ECECEC*/
+
+/*font-family: 'Quintessential', cursive;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+:root {
+  /*основные шрифты*/
+  --main-font: "Roboto", sans-serif;
+  --logo-font: "Raleway", sans-serif;
+
+  /*цвет текста*/
+  /*светлая тема текста*/
+  --accent-txt-cl:  #FFFFFF
+  --primary-txt-cl: #212121;
+
+  /*темная тема текста*/
+  --secondary-txt-cl: #757575
+
+  /*цвет фона*/
+  /*светлая тема фона*/
+
+  /*темная темафона*/
+}
+
+body {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
+
+.title {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.19;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--title-color);
+}
+
+.deckr {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.19;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
+.hero-btn {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+}
+.logo {
+  font-family: var(--logo-font);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+
+  letter-spacing: 0.03em;
+
+  color: #2196f3;
+}
