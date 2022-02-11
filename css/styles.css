@@ -12,10 +12,10 @@
   --title-txt-cl: #212121;
   --secondary-txt-cl: #2196f3;
 
-  /*цвет фона*/
   /*светлая тема фона*/
   --secondary-light-bg-ci: #e5e5e5;
-  /*темная темафона*/
+
+  /*темная тема фона*/
   --main-bg-cl: #2f303a;
   --section-bg-cl: #f5f4fa;
 }
@@ -238,4 +238,18 @@
   letter-spacing: 0.06em;
 
   color: var(--title-txt-cl);
+}
+
+/*скрываем удаленный заголовок*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
