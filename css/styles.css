@@ -20,38 +20,38 @@ Raleway 700
 #2F303A
 #ECECEC*/
 
-/*font-family: 'Quintessential', cursive;
-font-family: 'Raleway', sans-serif;
-font-family: 'Roboto', sans-serif;
-*/
-
 :root {
   /*основные шрифты*/
   --main-font: "Roboto", sans-serif;
   --logo-font: "Raleway", sans-serif;
 
-  /*цвет текста*/
   /*светлая тема текста*/
-  --accent-txt-cl:  #FFFFFF
-  --primary-txt-cl: #212121;
+  --accent-txt-cl: #ffffff;
+  --primary-txt-cl: #757575;
 
   /*темная тема текста*/
-  --secondary-txt-cl: #757575
+  --title-txt-cl: #212121;
+  --secondary-txt-cl: #2196f3;
 
   /*цвет фона*/
   /*светлая тема фона*/
-
+  --secondary-light-bg: #e5e5e5;
   /*темная темафона*/
+  --main-bg: #2f303a;
+  --section-bg: #f5f4fa;
 }
+
+/*доп шрифт*/
+/*font-family: 'Quintessential', cursive;*/
 
 body {
   font-family: var(--main-font);
-  font-weight: 400;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 
-  color: #757575;
+  color: var(--primary-txt-cl);
 }
 
 .title {
@@ -63,7 +63,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: var(--title-color);
+  color: var(--title-txt-cl);
 }
 
 .deckr {
@@ -76,7 +76,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: #757575;
+  color: var(--primary-txt-cl);
 }
 .hero-btn {
   font-family: var(--main-font);
@@ -89,16 +89,108 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
 
-  color: #ffffff;
+  color: var(--accent-txt-cl);
 }
 .logo {
   font-family: var(--logo-font);
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
 
   letter-spacing: 0.03em;
 
-  color: #2196f3;
+  color: var(--secondary-txt-cl);
+}
+
+/*Header*/
+.nav-link {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--title-txt-cl);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--secondary-txt-cl);
+}
+
+.contact-item a {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--primary-txt-cl);
+}
+
+.contact-item a:hover,
+.contact-item a:focus {
+  color: var(--secondary-txt-cl);
+}
+.hero {
+  background-color: var(--main-bg);
+}
+.hero-title {
+  font-family: var(--main-font);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--accent-txt-cl);
+}
+.hero-btn {
+  background-color: var(--secondary-txt-cl);
+}
+.benefits-title {
+  font-family: var(--main-font);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--title-txt-cl);
+}
+.about-title {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--title-txt-cl);
+}
+.team-title {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--title-txt-cl);
+}
+.name-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+
+  letter-spacing: 0.03em;
+
+  color: #212121;
 }
