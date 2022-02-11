@@ -1,25 +1,3 @@
-/*background: #E5E5E5*/
-/*
-Roboto
-400
-500
-700
-900
-Raleway 700
-*/
-
-/* #FFFFFF
-#212121
-#FFFFFF
-#757575
-#2196F3
-#EEEEEE
-
-#000000
-#F5F4FA
-#2F303A
-#ECECEC*/
-
 :root {
   /*основные шрифты*/
   --main-font: "Roboto", sans-serif;
@@ -28,6 +6,7 @@ Raleway 700
   /*светлая тема текста*/
   --accent-txt-cl: #ffffff;
   --primary-txt-cl: #757575;
+  --footer-txt-cl: rgba(255, 255, 255, 0.6);
 
   /*темная тема текста*/
   --title-txt-cl: #212121;
@@ -35,49 +14,35 @@ Raleway 700
 
   /*цвет фона*/
   /*светлая тема фона*/
-  --secondary-light-bg: #e5e5e5;
+  --secondary-light-bg-ci: #e5e5e5;
   /*темная темафона*/
-  --main-bg: #2f303a;
-  --section-bg: #f5f4fa;
+  --main-bg-cl: #2f303a;
+  --section-bg-cl: #f5f4fa;
 }
 
 /*доп шрифт*/
 /*font-family: 'Quintessential', cursive;*/
 
-body {
+.body {
   font-family: var(--main-font);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  background-color: var(--accent-txt-cl);
 
   color: var(--primary-txt-cl);
 }
 
-.title {
-  font-family: var(--main-font);
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.19;
-
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: var(--title-txt-cl);
+/*удаляет линию и диск а,li*/
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
 }
 
-.deckr {
-  font-family: var(--main-font);
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.19;
-  /* identical to box height */
-
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: var(--primary-txt-cl);
-}
+/*текст кнопка главная*/
 .hero-btn {
   font-family: var(--main-font);
   font-weight: 700;
@@ -91,7 +56,8 @@ body {
 
   color: var(--accent-txt-cl);
 }
-.logo {
+
+.header-logo {
   font-family: var(--logo-font);
   font-weight: 700;
   font-size: 26px;
@@ -100,6 +66,18 @@ body {
   letter-spacing: 0.03em;
 
   color: var(--secondary-txt-cl);
+}
+
+/*верхний логотип черный цвет*/
+.header-logo-accent {
+  font-family: var(--logo-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  letter-spacing: 0.03em;
+
+  color: var(--title-txt-cl);
 }
 
 /*Header*/
@@ -133,7 +111,7 @@ body {
   color: var(--secondary-txt-cl);
 }
 .hero {
-  background-color: var(--main-bg);
+  background-color: var(--main-bg-cl);
 }
 .hero-title {
   font-family: var(--main-font);
@@ -171,6 +149,9 @@ body {
 
   color: var(--title-txt-cl);
 }
+.team {
+  background-color: var(--section-bg-cl);
+}
 .team-title {
   font-family: var(--main-font);
   font-style: normal;
@@ -183,7 +164,7 @@ body {
   color: var(--title-txt-cl);
 }
 .name-title {
-  font-family: Roboto;
+  font-family: var(--main-font);
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -192,5 +173,69 @@ body {
 
   letter-spacing: 0.03em;
 
-  color: #212121;
+  color: var(--title-txt-cl);
+}
+.footer {
+  background-color: var(--main-bg-cl);
+}
+.footer-logo {
+  font-family: var(--logo-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-txt-cl);
+}
+.footer-logo-accent {
+  font-family: var(--logo-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  letter-spacing: 0.03em;
+
+  color: var(--accent-txt-cl);
+}
+.address-item .address-link {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
+
+  color: var(--accent-txt-cl);
+}
+.address-link-contact {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
+
+  color: var(--footer-txt-cl);
+}
+
+/*фокус-ховер кнопки фильтр*/
+.work-btn:hover,
+.work-btn:focus {
+  background-color: var(--secondary-txt-cl);
+}
+/*цвет заголовков портфолио*/
+.work-title {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  /* identical to box height, or 200% */
+
+  letter-spacing: 0.06em;
+
+  color: var(--title-txt-cl);
 }
