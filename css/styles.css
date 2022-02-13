@@ -1,7 +1,7 @@
 :root {
   /*основные шрифты*/
-  --main-font: "Roboto", sans-serif;
-  --logo-font: "Raleway", sans-serif;
+  --main-font: 'Roboto', sans-serif;
+  --logo-font: 'Raleway', sans-serif;
 
   /*светлая тема текста*/
   --accent-txt-cl: #ffffff;
@@ -59,22 +59,20 @@
   font-size: 26px;
   line-height: 1.19;
 
-  /*letter-spacing: 0.03em;*/
+  letter-spacing: 0.03em;
 
   color: var(--secondary-txt-cl);
 }
 
 /*верхний логотип черный цвет*/
 .header-logo-accent {
- 
-  /*letter-spacing: 0.03em;*/
+  letter-spacing: 0.03em;
 
   color: var(--title-txt-cl);
 }
 
 /*Header*/
 .nav-link {
-  /*font-family: var(--main-font);*/
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -89,7 +87,6 @@
 }
 
 .contact-item .link {
-  /*font-family: var(--main-font);*/
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -106,7 +103,6 @@
   background-color: var(--main-bg-cl);
 }
 .hero-title {
-  /*font-family: var(--main-font);*/
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -121,12 +117,10 @@
   background-color: var(--secondary-txt-cl);
 }
 .benefits-title {
-  /*font-family: var(--main-font);*/
-
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  /*letter-spacing: 0.03em;*/
+  letter-spacing: 0.03em;
   text-transform: uppercase;
 
   color: var(--title-txt-cl);
@@ -137,12 +131,11 @@
   line-height: 1.71;
 }
 .about-title {
-  /*font-family: var(--main-font);*/
   font-weight: 700;
   font-size: 36px;
   line-height: 1.7;
   text-align: center;
-  /*letter-spacing: 0.03em;*/
+  letter-spacing: 0.03em;
 
   color: var(--title-txt-cl);
 }
@@ -150,31 +143,29 @@
   background-color: var(--section-bg-cl);
 }
 .team-title {
-  /*font-family: var(--main-font);*/
   font-weight: 700;
   font-size: 36px;
   line-height: 1.7;
   text-align: center;
-  /*letter-spacing: 0.03em;*/
+  letter-spacing: 0.03em;
 
   color: var(--title-txt-cl);
 }
 .name-title {
-  /*font-family: var(--main-font);*/
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
 
-  /*letter-spacing: 0.03em;*/
+  letter-spacing: 0.03em;
 
   color: var(--title-txt-cl);
 }
 
-.team-descr{
-font-weight: 400;
-font-size: 16px;
-line-height: 1.19;
-/*letter-spacing: 0.03em;*/
+.team-descr {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 
 /*футер*/
@@ -201,7 +192,7 @@ line-height: 1.19;
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;*
+  font-size: 14px;
   line-height: 1.71;
 
   letter-spacing: 0.03em;
@@ -248,7 +239,6 @@ line-height: 1.19;
 
 /*цвет заголовков портфолио*/
 .work-title {
-  /*font-family: var(--main-font);*/
   font-weight: 700;
   font-size: 18px;
   line-height: 2;

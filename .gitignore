@@ -1,6 +1,5 @@
 settings.json
 # Logs
-.prettierrc.json
 logs
 *.log
 npm-debug.log*
